@@ -65,7 +65,7 @@ export default (React, PlainWrapperComponent) => {
     }
 
     wrapChild = (child) => {
-      return React.addons.cloneWithProps(
+      return React.cloneElement(
         child,
         assign(
           this.getExtraProps(),
